@@ -4,7 +4,7 @@ The design:
 
 I split GetOrganization method into few smaller ones to make it readable and testable. I used a constructor injection in OrganizationsController.
 <br>LocationIds is an array when it's as json, but it's a string when it's in database. I made a Converter helper class for that.
-<br>The method GetRemoteData returns Content or Throws exception which is turned into Content by the calling method to comfortably handle wrong <br>input for a user.
+<br>The method GetRemoteData returns Content or Throws exception which is turned into Content by the calling method to comfortably handle wrong input for a user.
 <br>I used EF to map entities to databse.
 <br>Anyone can easily run the solution locally without much configuration, as I used sqlite. I wanted to focus on code instead of database design, normally I would use an "actual database".
 <br>Most methods are async even though often they are awaited. The reason for that is to have future extensibility, as a bigger system might have an advantage in calling some methods simultaneously eg. writing to database imported record and responding with it to a user.
