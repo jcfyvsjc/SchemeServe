@@ -20,10 +20,10 @@ namespace UnitTest;
 [TestClass]
 public class OrganizationsControllerTests
 {
-    private Mock<HttpMessageHandler> _mockHttpMessageHandler;
- private OrganizationsController _controller;
- private HttpClient _httpClient;
- private Mock<OrganizationDbContext> _dbContextMock;
+     private Mock<HttpMessageHandler> _mockHttpMessageHandler;
+     private OrganizationsController _controller;
+     private HttpClient _httpClient;
+     private Mock<OrganizationDbContext> _dbContextMock;
  
 
 [TestInitialize]
