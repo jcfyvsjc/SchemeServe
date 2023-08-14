@@ -1,6 +1,6 @@
 I have tried to fit in the desired timeframe. I've assumed I was allowed to take some shortcuts. In normal environment of course I would do some things differently.
 
-The design:
+The design:  
 
 I split GetOrganization method into few smaller ones to make it readable and testable. I used a constructor injection in OrganizationsController.
 <br>LocationIds is an array when it's as json, but it's a string when it's in database. I made a Converter helper class for that.
