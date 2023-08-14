@@ -14,7 +14,7 @@ I split GetOrganization method into few smaller ones to make it readable and tes
 
 Things I would do in a normal environment:
 
-<br>More exception handling that includes a wider range of user input with customized messages.
+More exception handling that includes a wider range of user input with customized messages.
 <br>I would analyze the datatypes more to make sure they fit the requirements and I would mock more elements in unit tests.
 <br>Logging.
 <br>I would have have data access layer in a separate class and I would analyze dependency resolution to make sure the code is loosely coupled and testable with a wide range of cases.
