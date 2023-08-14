@@ -1,5 +1,5 @@
 I have tried to fit in the desired timeframe. I've assumed I was allowed to take some shortcuts. In normal environment of course I would do some things differently.
-
+  
 The design:  
 
 I split GetOrganization method into few smaller ones to make it readable and testable. I used a constructor injection in OrganizationsController.
