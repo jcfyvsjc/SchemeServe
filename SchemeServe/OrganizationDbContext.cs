@@ -25,108 +25,108 @@ public class OrganizationDbContext : DbContext
         modelBuilder.Entity<Organization>(entity =>
     {
         entity.ToTable("Organizations");
-        entity.HasKey(e => e.ProviderId);
+        entity.HasKey(og => og.ProviderId);
 
-        entity.Property(e => e.LocationIdsString)
+        entity.Property(og => og.LocationIdsString)
             .HasColumnName("LocationIds");
         
-        entity.Property(e => e.OrganisationType)
+        entity.Property(og => og.OrganisationType)
             .HasColumnName("OrganisationType")
             .HasDefaultValue(defaultValue);
 
-        entity.Property(e => e.OwnershipType)
+        entity.Property(og => og.OwnershipType)
             .HasColumnName("OwnershipType")
             .HasDefaultValue(defaultValue);
 
-        entity.Property(e => e.Type)
+        entity.Property(og => og.Type)
             .HasColumnName("Type")
             .HasDefaultValue(defaultValue);
 
-        entity.Property(e => e.Name)
+        entity.Property(og => og.Name)
             .HasColumnName("Name")
             .HasDefaultValue(defaultValue);
 
-        entity.Property(e => e.BrandId)
+        entity.Property(og => og.BrandId)
             .HasColumnName("BrandId")
             .HasDefaultValue(defaultValue);
 
-        entity.Property(e => e.BrandName)
+        entity.Property(og => og.BrandName)
             .HasColumnName("BrandName")
             .HasDefaultValue(defaultValue);
 
-        entity.Property(e => e.RegistrationStatus)
+        entity.Property(og => og.RegistrationStatus)
             .HasColumnName("RegistrationStatus")
             .HasDefaultValue(defaultValue);
 
-        entity.Property(e => e.RegistrationDate)
+        entity.Property(og => og.RegistrationDate)
             .HasColumnName("RegistrationDate")
             .HasDefaultValue(defaultValue);
 
-        entity.Property(e => e.CompaniesHouseNumber)
+        entity.Property(og => og.CompaniesHouseNumber)
             .HasColumnName("CompaniesHouseNumber")
             .HasDefaultValue(defaultValue);
 
-        entity.Property(e => e.CharityNumber)
+        entity.Property(og => og.CharityNumber)
             .HasColumnName("CharityNumber")
             .HasDefaultValue(defaultValue);
 
-        entity.Property(e => e.Website)
+        entity.Property(og => og.Website)
             .HasColumnName("Website")
             .HasDefaultValue(defaultValue);
 
-        entity.Property(e => e.PostalAddressLine1)
+        entity.Property(og => og.PostalAddressLine1)
             .HasColumnName("PostalAddressLine1")
             .HasDefaultValue(defaultValue);
 
-        entity.Property(e => e.PostalAddressLine2)
+        entity.Property(og => og.PostalAddressLine2)
             .HasColumnName("PostalAddressLine2")
             .HasDefaultValue(defaultValue);
 
-        entity.Property(e => e.PostalAddressTownCity)
+        entity.Property(og => og.PostalAddressTownCity)
             .HasColumnName("PostalAddressTownCity")
             .HasDefaultValue(defaultValue);
 
-        entity.Property(e => e.PostalAddressCounty)
+        entity.Property(og => og.PostalAddressCounty)
             .HasColumnName("PostalAddressCounty")
             .HasDefaultValue(defaultValue);
 
-        entity.Property(e => e.Region)
+        entity.Property(og => og.Region)
             .HasColumnName("Region")
             .HasDefaultValue(defaultValue);
 
-        entity.Property(e => e.PostalCode)
+        entity.Property(og => og.PostalCode)
             .HasColumnName("PostalCode")
             .HasDefaultValue(defaultValue);
 
-        entity.Property(e => e.Uprn)
+        entity.Property(og => og.Uprn)
             .HasColumnName("Uprn")
             .HasDefaultValue(defaultValue);
 
-        entity.Property(e => e.OnspdLatitude)
+        entity.Property(og => og.OnspdLatitude)
             .HasColumnName("OnspdLatitude")
             .HasDefaultValue(0);
 
-        entity.Property(e => e.OnspdLongitude)
+        entity.Property(og => og.OnspdLongitude)
             .HasColumnName("OnspdLongitude")
             .HasDefaultValue(0);
 
-        entity.Property(e => e.MainPhoneNumber)
+        entity.Property(og => og.MainPhoneNumber)
             .HasColumnName("MainPhoneNumber")
             .HasDefaultValue(defaultValue);
 
-        entity.Property(e => e.InspectionDirectorate)
+        entity.Property(og => og.InspectionDirectorate)
             .HasColumnName("InspectionDirectorate")
             .HasDefaultValue(defaultValue);
 
-        entity.Property(e => e.Constituency)
+        entity.Property(og => og.Constituency)
             .HasColumnName("Constituency")
             .HasDefaultValue(defaultValue);
 
-        entity.Property(e => e.LocalAuthority)
+        entity.Property(og => og.LocalAuthority)
             .HasColumnName("LocalAuthority")
             .HasDefaultValue(defaultValue);
 
-        entity.Property(e => e.DateModified)
+        entity.Property(og => og.DateModified)
             .HasColumnName("DateModified")
             .HasDefaultValue(defaultValue);
     });
